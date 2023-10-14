@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 300;
+    background: white;
+    color: #555;
+    margin-bottom: 50px;
+    overflow: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 300;
+}
+
+#wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+#left {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    border-right: 1px solid #aaa;
+
+}
+
+#right {
+    flex: 2;
+    
+    
+}
+
+/* Left Page Menu */
+
+#signin {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    padding-bottom: 1rem;
+}
+
+#signin .logo {
+    margin-bottom: 2vh;
+    margin-top: 11vh;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+#signin .logo a img {
+    margin-top: 50px;
+    width: 170px;
+    border-radius: 6rem;
+    margin-bottom: 30px;
+}
+
+#signin .logo a:hover {
+    opacity: 0.8;
+}
+
+
+#signin .main-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    padding-bottom: 4rem;
+}
+
+#signin .main-menu a {
+    padding: 20px 0 0 0;
+    font-size: 18px;
+    text-decoration: none;
+    color: #555;
+}
+
+#signin .main-menu a:hover {
+    color: salmon;
+}
+
+/* Social Media */
+
+.follow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.follow a {
+    padding: 20px 8px 0 8px;
+    margin-bottom: -30px;
+}
+
+.follow a:hover {
+    opacity: 0.8;
+}
+
+#signin .follow .beh {
+    margin-top: 4px;
+}
+
+#signin .follow .ins img {
+    width: 25px;
+}
+
+#signin .follow .lin img {
+    width: 23px;
+}
+
+#signin .follow .beh img {
+    width: 30px;
+}
+
+
+/* Right Page Contact */
+
+.back{
+    display: none;
+    
+}
+
+#contact {
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    margin-left: 340px;
+    margin-top: 50px;
+    
+
+}
+
+#contact img {
+    width: 200px;
+    margin-left: 80px;
+    margin-bottom: 40px;
+    
+}
+
+
+#contact form {
+    width: 80%;
+    padding-bottom: 3rem;
+}
+
+
+#contact label {
+    font-size: 1.1rem;
+    line-height: 2rem;
+    font-weight: 500;
+    padding-right: 20px;
+}
+
+#contact .text-input {
+    margin-bottom: 1.3rem;
+    width: 280px;
+    border-radius: 3px;
+    background:rgb(255, 241, 241);
+    border: none;
+    border-radius: 10px;
+    color: #000000;
+    padding: 0.5rem 1rem;
+    line-height: 1.3rem;
+
+}
+
+#contact .text-input1 {
+    margin-bottom: 1.3rem;
+    width: 375px;
+    border-radius: 3px;
+    background:rgb(255, 241, 241);
+    border: none;
+    border-radius: 10px;
+    color: #000000;
+    padding: 0.5rem 1rem;
+    line-height: 1rem;
+    display: block;
+    resize: none;
+
+}
+
+.btn {
+    padding: 10px 165px 10px 165px;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    background: rgb(255, 241, 241);
+
+}
+
+.btn:hover  {
+    background: salmon;
+    color: white;
+
+}   
+
+
+/* Footer */
+
+#main-footer {
+    color: #ccc;
+    text-align: center;
+    font-size: 0.8rem;
+    max-width: 80%;
+    padding-top: 5rem;
+    padding-bottom: 7rem;
+}
+
+#main-footer a {
+    color: #f96816;
+    text-decoration: underline;
+}
+
+
+
+@media(max-width: 768px) {
+    body {
+        overflow: hidden;
+    }
+
+    #wrapper {
+        display: flex;
+        flex-direction: row;
+    
+    }
+
+    #left{
+        display: none;
+    }
+
+    .back{
+        display: inline;
+        margin-left: 200px;
+    }
+
+    #contact img{
+        margin: 15px 0 15px 0;
+    }
+
+    #contact{
+        margin-left: 80px;
+        margin-top: 10px;
+    }
+
+    #contact .text-input {
+        width: 100%;
+        
+    }
+    
+    #contact .text-input1 {
+        width: 100%;
+       
+    }
+
+    .btn{
+        padding: 10px 137px;
+        width: 100%;
+        
+    } 
+
+ 
+   
+}
+
+
+@media(max-width: 590px) {
+    body {
+        overflow: hidden;
+    }
+
+    #wrapper {
+        display: flex;
+        flex-direction: row;
+    
+    }
+
+    #left{
+        display: none;
+    }
+
+   .back{
+        display: inline;
+        margin-left: 100px;
+    }
+       
+
+    #contact img{
+        margin: 15px 0 15px 0;
+    }
+
+    #contact{
+        margin-left: 80px;
+        margin-top: 10px;
+    }
+
+    #contact .text-input {
+        width: 100%;
+        
+    }
+    
+    #contact .text-input1 {
+        width: 100%;
+       
+    }
+
+    .btn{
+        padding: 10px 137px;
+        width: 100%;
+        
+    }
+
+   
+    
+    
+
+}
